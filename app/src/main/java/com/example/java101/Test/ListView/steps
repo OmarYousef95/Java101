@@ -1,0 +1,12 @@
+1. Create ListView Activity with the ListView in the xml file
+
+2. Create the card view layout in the layout res.
+
+3. Create the model class.
+
+4. Create the ListView adapter
+       A. Make the adapter extends ArrayAdapter<ListViewModel>.
+       B. implement the constructor (context,int,object).
+       C. Remove the int and make the resource in the super = 0.
+       D. Override getView method and inflate the card view.
+       E. set the ListView and the adapter in the ListViewActivity.

@@ -1,0 +1,16 @@
+1. Create Recycler View Activity , with the RV in xml file
+
+2. Create the card view layout in the layout res.
+
+3. Create the model class.
+
+4. Create the RV adapter
+        A. Make the adapter extends RecyclerView.Adapter.
+        B. Create a view holder .. public class ViewHolder extends RecyclerView.ViewHolder.
+        C. RecyclerView.Adapter<RVAdapter.ViewHolder>.
+        D. import the Override Methods ( onCreateViewHolder, onBindViewHolder, getItemCount).
+        E. in RvActivity set the RV & the adapter.
+
+
+        Watch
+        https://www.youtube.com/watch?v=Nw9JF55LDzE&list=PLrnPJCHvNZuBtTYUuc5Pyo4V7xZ2HNtf4&index=1
