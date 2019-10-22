@@ -17,6 +17,8 @@ import android.widget.Toast;
 import com.example.java101.Test.GridView.GridViewActivity;
 import com.example.java101.Test.ListView.ListViewActivity;
 import com.example.java101.Test.RV.RVActivity;
+import com.example.java101.Threads.AsyncTaskThreadActivity;
+import com.example.java101.Threads.BasicThreadActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, AsyncTaskThreadActivity.class);
                 startActivity(intent);
             }
         });
