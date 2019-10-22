@@ -8,8 +8,10 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.util.Linkify;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.java101.Test.GridView.GridViewActivity;
@@ -24,15 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
     Button testBtn;
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    TextView textView1,textView2,textView3,textView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         testBtn = findViewById(R.id.testBtn);
+
+        textView1 = findViewById(R.id.test1);
+        textView2 = findViewById(R.id.test2);
+        textView3 = findViewById(R.id.test3);
+        textView4 = findViewById(R.id.test4);
+
 
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +48,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+        textView1.setText("http://www.google.com");
+        Linkify.addLinks(textView1,Linkify.WEB_URLS);
+
+        textView2.setText("5552323233");
+        Linkify.addLinks(textView2  , Linkify.PHONE_NUMBERS);
+
+        textView3.setText("436 Mayfield Ave, Stanford, CA");
+        Linkify.addLinks(textView3 , Linkify.MAP_ADDRESSES);
+
+        textView4.setText("omarm7sere95@gmail.com");
+        Linkify.addLinks(textView4, Linkify.EMAIL_ADDRESSES);
 
 
     }
