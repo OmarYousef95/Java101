@@ -1,18 +1,17 @@
-package com.example.java101.Test.RV;
+package com.example.java101.Views.ListView;
 
-import android.graphics.drawable.Drawable;
+public class ListViewModel {
 
-public class RvModel {
 
-    public String name,info;
+    public String name,Info;
     public Integer image;
 
-    public RvModel() {
+    public ListViewModel() {
     }
 
-    public RvModel(String name, String info, Integer image) {
+    public ListViewModel(String name, String info, Integer image) {
         this.name = name;
-        this.info = info;
+        Info = info;
         this.image = image;
     }
 
@@ -25,11 +24,11 @@ public class RvModel {
     }
 
     public String getInfo() {
-        return info;
+        return Info;
     }
 
     public void setInfo(String info) {
-        this.info = info;
+        Info = info;
     }
 
     public Integer getImage() {

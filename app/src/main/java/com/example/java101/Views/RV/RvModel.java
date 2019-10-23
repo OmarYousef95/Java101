@@ -1,17 +1,16 @@
-package com.example.java101.Test.ListView;
+package com.example.java101.Views.RV;
 
-public class ListViewModel {
+public class RvModel {
 
-
-    public String name,Info;
+    public String name,info;
     public Integer image;
 
-    public ListViewModel() {
+    public RvModel() {
     }
 
-    public ListViewModel(String name, String info, Integer image) {
+    public RvModel(String name, String info, Integer image) {
         this.name = name;
-        Info = info;
+        this.info = info;
         this.image = image;
     }
 
@@ -24,11 +23,11 @@ public class ListViewModel {
     }
 
     public String getInfo() {
-        return Info;
+        return info;
     }
 
     public void setInfo(String info) {
-        Info = info;
+        this.info = info;
     }
 
     public Integer getImage() {

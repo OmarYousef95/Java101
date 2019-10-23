@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Fragments.FragmentsExampleActivity"></activity>
+        <activity android:name=".Dialogs.AlertDialogExampleActivity"></activity>
+        <activity android:name=".Fragments.FragmentsExampleActivity" />
         <activity android:name=".SharedPreferences.SharedPreferencesActivity" />
         <activity android:name=".LinkifyActivity" />
         <activity android:name=".Threads.PostDelayedRunnableActivity" />
         <activity android:name=".Threads.LooperHandlerThread.LooperHandlerThreadActivity" />
         <activity android:name=".Threads.AsyncTaskThreadActivity" />
         <activity android:name=".Threads.BasicThreadActivity" />
-        <activity android:name=".Test.GridView.GridViewActivity" />
-        <activity android:name=".Test.ListView.ListViewActivity" />
-        <activity android:name=".Test.RV.RVActivity" />
+        <activity android:name=".Views.GridView.GridViewActivity" />
+        <activity android:name=".Views.ListView.ListViewActivity" />
+        <activity android:name=".Views.RV.RVActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

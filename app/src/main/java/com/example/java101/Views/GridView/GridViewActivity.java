@@ -1,4 +1,4 @@
-package com.example.java101.Test.GridView;
+package com.example.java101.Views.GridView;
 
 import androidx.appcompat.app.AppCompatActivity;
 

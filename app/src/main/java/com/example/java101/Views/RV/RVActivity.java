@@ -1,11 +1,10 @@
-package com.example.java101.Test.RV;
+package com.example.java101.Views.RV;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.java101.R;
 
