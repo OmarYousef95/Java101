@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".SharedPreferences.SharedPreferencesActivity">
+
+    <EditText
+        android:id="@+id/shared_pref_edit_text"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Data"/>
+
+    <Button
+        android:id="@+id/shared_pref_save_btn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"/>
+
+    <Button
+        android:id="@+id/shared_pref_load_btn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"/>
+
+    <TextView
+        android:id="@+id/shared_pref_text_view"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMPTY"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"/>
+
+
+
+    <EditText
+        android:id="@+id/shared_pref_custom_first_name_edit_text"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"/>
+
+    <EditText
+        android:id="@+id/shared_pref_custom_last_name_edit_text"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"/>
+
+    <Button
+        android:id="@+id/shared_pref_save_custom_object_btn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To Custom Object"/>
+
+    <Button
+        android:id="@+id/shared_pref_load_custom_object_btn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load From Custom Object"/>
+
+    <TextView
+        android:id="@+id/shared_pref_custom_object_text_view"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMPTY"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"/>
+
+
+
+
+</LinearLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.java101.SharedPreferences.SharedPreferencesActivity;
 import com.example.java101.Test.GridView.GridViewActivity;
 import com.example.java101.Test.ListView.ListViewActivity;
 import com.example.java101.Test.RV.RVActivity;
@@ -22,6 +24,7 @@ import com.example.java101.Threads.BasicThreadActivity;
 import com.example.java101.Threads.LooperHandlerThread.LooperHandlerThreadActivity;
 import com.example.java101.Threads.PostDelayedRunnableActivity;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LinkifyActivity.class);
+                Intent intent = new Intent(MainActivity.this, SharedPreferencesActivity.class);
                 startActivity(intent);
             }
         });
