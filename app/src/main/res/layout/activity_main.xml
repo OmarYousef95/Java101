@@ -16,37 +16,6 @@
         android:text="Confirm"
         android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/test1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Test"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
-    <TextView
-        android:id="@+id/test2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Test"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
-    <TextView
-        android:id="@+id/test3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Test"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
-    <TextView
-        android:id="@+id/test4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Test"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+
 
 </LinearLayout>

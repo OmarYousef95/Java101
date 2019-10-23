@@ -124,6 +124,8 @@ public class AsyncTaskThreadActivity extends AppCompatActivity {
 
             ArrayList<Integer> arrayList = new ArrayList<>();
 
+
+            //sleep for 3 seconds
             for (int i = 0 ; i <3 ; i++){
 
                 Log.v("ZXC","StartThread: "+ i);

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Threads.AsyncTaskThreadActivity"></activity>
+        <activity android:name=".LinkifyActivity"></activity>
+        <activity android:name=".Threads.PostDelayedRunnableActivity" />
+        <activity android:name=".Threads.LooperHandlerThread.LooperHandlerThreadActivity" />
+        <activity android:name=".Threads.AsyncTaskThreadActivity" />
         <activity android:name=".Threads.BasicThreadActivity" />
         <activity android:name=".Test.GridView.GridViewActivity" />
         <activity android:name=".Test.ListView.ListViewActivity" />
