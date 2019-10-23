@@ -1,0 +1,12 @@
+1. Create fragment layout >>> example_fragment
+
+2. Create a java class that extends Fragment
+        A. Override onCreateView method
+        B. Inflate the layout created in step 1.
+        C. Define the views inside onCreateView method.
+
+3. In the activity insert the frame layout in the xml file.
+
+4. To send values for the fragment we make a public static method with wanted parameters
+        A. To save the values we used the Bundle.
+        B. To show it .. onCreateView get the values with the same keys that saved in.

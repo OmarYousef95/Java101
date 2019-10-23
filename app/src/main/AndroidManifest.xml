@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SharedPreferences.SharedPreferencesActivity"></activity>
+        <activity android:name=".Fragments.FragmentsExampleActivity"></activity>
+        <activity android:name=".SharedPreferences.SharedPreferencesActivity" />
         <activity android:name=".LinkifyActivity" />
         <activity android:name=".Threads.PostDelayedRunnableActivity" />
         <activity android:name=".Threads.LooperHandlerThread.LooperHandlerThreadActivity" />

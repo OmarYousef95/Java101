@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.java101.Fragments.FragmentsExampleActivity;
 import com.example.java101.SharedPreferences.SharedPreferencesActivity;
 import com.example.java101.Test.GridView.GridViewActivity;
 import com.example.java101.Test.ListView.ListViewActivity;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SharedPreferencesActivity.class);
+                Intent intent = new Intent(MainActivity.this, FragmentsExampleActivity.class);
                 startActivity(intent);
             }
         });
