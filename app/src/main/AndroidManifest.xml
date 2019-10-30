@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.java101">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dialogs.AlertDialogExampleActivity"></activity>
+        <activity android:name=".SQLite.SQLiteGroceryExample.GroceryExampleMainActivity"></activity>
+        <activity android:name=".DateTimeFormats.DateTimeExampleActivity" />
+        <activity android:name=".CustomObjectsBetweenActivites.ShareObjectsTwoActivity" />
+        <activity android:name=".CustomObjectsBetweenActivites.ShareObjectsOneActivity" />
+        <activity android:name=".MapLocation.MapLocationExampleActivity" />
+        <activity android:name=".ConstraintLayout.ConstraintLayoutExample2Activity" />
+        <activity android:name=".ConstraintLayout.DefaultLayoutExampleActivity" />
+        <activity android:name=".ConstraintLayout.ConstraintLayoutExampleActivity" />
+        <activity android:name=".Menus.MenuExampleActivity" />
+        <activity android:name=".Dialogs.AlertDialogExampleActivity" />
         <activity android:name=".Fragments.FragmentsExampleActivity" />
         <activity android:name=".SharedPreferences.SharedPreferencesActivity" />
         <activity android:name=".LinkifyActivity" />
