@@ -20,6 +20,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
     private Context context;
     private List<RvModel> modelList;
 
+    private onItemClickListener listener;
+
     public RVAdapter(Context context, List<RvModel> modelList) {
         this.context = context;
         this.modelList = modelList;
@@ -40,13 +42,13 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
         holder.imageView.setImageResource(model.getImage());
 
         //to make the RV clickable use this ...
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Position: " + position + "\nName: "+ model.getName()+
-                        "\nInfoe: "+ model.getInfo(), Toast.LENGTH_SHORT).show();
-            }
-        });
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(context, "Position: " + position + "\nName: "+ model.getName()+
+//                        "\nInfoe: "+ model.getInfo(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 
@@ -67,6 +69,30 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
             textViewName = itemView.findViewById(R.id.text_view_name);
             imageView = itemView.findViewById(R.id.image_view_upload);
             textViewInfo = itemView.findViewById(R.id.text_view_info);
+
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            int position = getAdapterPosition();
+            if (listener != null && position != RecyclerView.NO_POSITION){
+                listener.onItemClick(modelList.get(position));
+            }
+            }
+        });
+
         }
     }
+
+    public interface onItemClickListener{
+        void onItemClick(RvModel model);
+    }
+
+
+    public void setOnItemClickListener(onItemClickListener listener) {
+        this.listener = listener;
+    }
+
+
+
+
 }

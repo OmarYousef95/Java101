@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SQLite.SQLiteGroceryExample.GroceryExampleMainActivity"></activity>
+        <activity android:name=".CustomTextView.CustomTextViewActivity"></activity>
+        <activity android:name=".SQLite.SQLiteGroceryExample.GroceryExampleMainActivity" />
         <activity android:name=".DateTimeFormats.DateTimeExampleActivity" />
         <activity android:name=".CustomObjectsBetweenActivites.ShareObjectsTwoActivity" />
         <activity android:name=".CustomObjectsBetweenActivites.ShareObjectsOneActivity" />
@@ -38,6 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.java101.R;
 
@@ -46,6 +47,12 @@ public class RVActivity extends AppCompatActivity {
 
 
 
+        adapter.setOnItemClickListener(new RVAdapter.onItemClickListener() {
+            @Override
+            public void onItemClick(RvModel model) {
+                Toast.makeText(RVActivity.this, "Number is " + model.info, Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
