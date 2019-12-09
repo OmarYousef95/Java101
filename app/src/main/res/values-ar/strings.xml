@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Java 101</string>
+    <string name="hello_world">"مرحبا "</string>
+    <string name="do_something">قم بعمل ما</string>
+    <string name="toast">هذا توست</string>
+    <string name="arabic_lang">العربية</string>
+    <string name="english_lang">الانجليزية</string>
+</resources>

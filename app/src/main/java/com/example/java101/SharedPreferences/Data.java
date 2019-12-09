@@ -54,6 +54,14 @@ public class Data {
     }
 
 
+    public void setLanguage (String key, String value){
+        sharedPreferencesEditor.putString(key, value).apply();
+    }
+
+    public String getLanguage(String key) {
+        return sharedPreferences.getString(key, "en");
+    }
+
     public void setCustomObject(String key , CustomObject customObject){
         sharedPreferencesEditor.putString(key,new Gson().toJson(customObject)).apply();
     }
