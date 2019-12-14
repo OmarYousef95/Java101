@@ -18,6 +18,8 @@ import com.example.java101.Menus.MenuExampleActivity;
 import com.example.java101.MultiLanguage.CustomMultiLanguageActivity;
 import com.example.java101.MultiLanguage.MultiLanguageActivity;
 import com.example.java101.SQLite.SQLiteGroceryExample.GroceryExampleMainActivity;
+import com.example.java101.SplashScreen.SplashScreenActivity;
+import com.example.java101.SplashScreen.SplashScreenMainActivity;
 import com.example.java101.Threads.PostDelayedRunnableActivity;
 import com.example.java101.Views.RV.RVActivity;
 
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CustomTextViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, SplashScreenActivity.class);
                 startActivity(intent);
             }
         });
