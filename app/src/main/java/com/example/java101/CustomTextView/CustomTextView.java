@@ -9,8 +9,10 @@ import androidx.annotation.Nullable;
 
 import com.example.java101.R;
 
-public class CustomTextView extends TextView {
+public class CustomTextView extends AppCompatTextView{
 
+    
+    //EDITED
 
     public CustomTextView(Context context) {
         super(context);
