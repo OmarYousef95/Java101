@@ -6,10 +6,11 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.java101.R;
 
-public class CustomTextView extends AppCompatTextView{
+public class CustomTextView extends AppCompatTextView {
 
     
     //EDITED

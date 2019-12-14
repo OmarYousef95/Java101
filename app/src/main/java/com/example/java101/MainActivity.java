@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CustomMultiLanguageActivity.class);
+                Intent intent = new Intent(MainActivity.this, CustomTextViewActivity.class);
                 startActivity(intent);
             }
         });
