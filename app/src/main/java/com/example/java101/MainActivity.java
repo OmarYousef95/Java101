@@ -3,10 +3,14 @@ package com.example.java101;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
+import com.example.java101.Chips.ChipsActivity;
 import com.example.java101.ConstraintLayout.ConstraintLayoutExampleActivity;
 import com.example.java101.ConstraintLayout.DefaultLayoutExampleActivity;
 import com.example.java101.CustomObjectsBetweenActivites.ShareObjectsOneActivity;
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
 
     Button testBtn;
+    CheckBox checkBox;
+    Drawable drawable;
+
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
 
@@ -38,17 +45,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         testBtn = findViewById(R.id.testBtn);
+        checkBox = findViewById(R.id.checkBox);
 
+
+        drawable = checkBox.getButtonDrawable();
 
 
 
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SplashScreenActivity.class);
+                Intent intent = new Intent(MainActivity.this, ChipsActivity.class);
                 startActivity(intent);
+
+                //checkBox.setButtonDrawable(getDrawable(R.drawable.ic_check_box_outline_blank_black_24dp));
+
+
             }
         });
+
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkBox.setButtonDrawable(drawable);
+            }
+        });
+
+
 
 
 

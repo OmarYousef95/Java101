@@ -24,9 +24,20 @@ public class DateTimeExampleActivity extends AppCompatActivity {
 
         Log.v("ZXC", time);
 
+          Calendar cal = Calendar.getInstance();
+         int year = cal.get(Calendar.YEAR);
+         int month = cal.get(Calendar.MONTH) +1;
+         int day = cal.get(Calendar.DAY_OF_MONTH);
 
-        DateFormat df1 = new SimpleDateFormat("d/M/yyyy");
+
+        Log.v("ZXC", ""+ day + "/" + month + "/" + year);
+
+
+        DateFormat df1 = new SimpleDateFormat("dd/mm/yyyy");
         String date = df1.format(Calendar.getInstance().getTime());
+        String mYear = df1.format(Calendar.getInstance().get(Calendar.YEAR));
+        String mMonth = df1.format(Calendar.getInstance().get(Calendar.MONTH));
+        String mDay = df1.format(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
 
         Log.v("ZXC", date);
 
