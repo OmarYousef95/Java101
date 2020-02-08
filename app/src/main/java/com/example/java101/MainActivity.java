@@ -3,6 +3,8 @@ package com.example.java101;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
+import com.example.java101.BarCode.BarcodeActivity;
 import com.example.java101.Chips.ChipsActivity;
 import com.example.java101.ConstraintLayout.ConstraintLayoutExampleActivity;
 import com.example.java101.ConstraintLayout.DefaultLayoutExampleActivity;
@@ -50,15 +53,16 @@ public class MainActivity extends AppCompatActivity {
 
         drawable = checkBox.getButtonDrawable();
 
-
-
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ChipsActivity.class);
+                Intent intent = new Intent(MainActivity.this, BarcodeActivity.class);
                 startActivity(intent);
 
-                //checkBox.setButtonDrawable(getDrawable(R.drawable.ic_check_box_outline_blank_black_24dp));
+//                checkBox.setButtonDrawable(getDrawable(R.drawable.ic_brightness_1_black_24dp));
+//                checkBox.setButtonTintList(ColorStateList.valueOf(getColor(R.color.colorPrimaryDark)));
+//                checkBox.setPadding(17,0,17,0);
+                //checkBox.setButtonTintList(myList);
 
 
             }
@@ -68,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkBox.setButtonDrawable(drawable);
+                checkBox.setButtonTintList(ColorStateList.valueOf(getColor(R.color.coolColor)));
+                checkBox.setPadding(0,0,0,0);
             }
         });
 

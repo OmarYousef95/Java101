@@ -3,6 +3,13 @@
     package="com.example.java101">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Chips.ChipsActivity"></activity>
+        <activity android:name=".BarCode.BarcodeActivity"></activity>
+        <activity android:name=".Chips.ChipsActivity" />
         <activity android:name=".SplashScreen.SplashScreenActivity" />
         <activity android:name=".SplashScreen.SplashScreenMainActivity" />
         <activity android:name=".MultiLanguage.CustomMultiLanguageActivity" />
